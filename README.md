@@ -5,10 +5,6 @@
 -> Heros token function 
     1. mint Percentages -- which mints the respective amount of tokens to thier wallet addresses
     2. Buy - which transfers an user input amount of tokens for stableCoins(USDC,USDT,DAI)
-    3. setWallet type -- which is used by owner of contract to set the wallets which can buy 
-                            different types of sales.
-
-                            ->set function with integer 1 to enable seed sale rate
-                            -> with integer 2 to enable private sale rate 
-                            -> with 3 to enable strategic sale rate
-                            -> 4 or 0 to enable public sale
+    3. setWallet type -- which is used by owner of contract to set the wallets of different departments.
+ 
+The Latest Contract usage functions to set Cliff and Vestings at realtime. Contract deployed on Ropsten Test Network https://ropsten.etherscan.io/tx/0x13600a72c075f661fce6b9c1dcd2e711b42d4587077cbea87d092f64bdf5a18a
