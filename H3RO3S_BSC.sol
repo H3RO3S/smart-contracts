@@ -8,7 +8,6 @@
 
 // OpenZeppelin Contracts v4.3.2 (utils/math/SafeMath.sol)
 
-pragma solidity ^0.8.0;
 
 // CAUTION
 // This version of SafeMath should only be used with Solidity 0.8 or later,
@@ -238,7 +237,6 @@ library SafeMath {
 
 // OpenZeppelin Contracts v4.3.2 (utils/Address.sol)
 
-pragma solidity ^0.8.0;
 
 /**
  * @dev Collection of functions related to the address type
@@ -458,7 +456,6 @@ library Address {
 
 // OpenZeppelin Contracts v4.3.2 (token/ERC20/IERC20.sol)
 
-pragma solidity ^0.8.0;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -543,7 +540,6 @@ interface IERC20 {
 
 // OpenZeppelin Contracts v4.3.2 (token/ERC20/utils/SafeERC20.sol)
 
-pragma solidity ^0.8.0;
 
 
 
@@ -643,7 +639,6 @@ library SafeERC20 {
 
 
 
-pragma solidity ^0.8.0;
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -667,9 +662,6 @@ abstract contract Context {
 
 // File: @openzeppelin/contracts/access/Ownable.sol
 
-
-
-pragma solidity ^0.8.0;
 
 
 /**
@@ -740,9 +732,6 @@ abstract contract Ownable is Context {
 
 // File: vesting.sol
 
-
-
-pragma solidity ^0.8.0;
 
 
 
@@ -921,8 +910,6 @@ contract TokenVesting is Ownable {
         }
     }
 }
-
-pragma solidity ^0.8.0;
 
 /**
  * @dev Library for managing
@@ -1281,8 +1268,6 @@ library EnumerableSet {
 
 
 
-pragma solidity ^0.8.0;
-
 /**
  * @dev Interface of the ERC165 standard, as defined in the
  * https://eips.ethereum.org/EIPS/eip-165[EIP].
@@ -1307,8 +1292,6 @@ interface IERC165 {
 // File: @openzeppelin/contracts/utils/introspection/ERC165.sol
 
 
-
-pragma solidity ^0.8.0;
 
 
 /**
@@ -1337,8 +1320,6 @@ abstract contract ERC165 is IERC165 {
 // File: @openzeppelin/contracts/utils/Strings.sol
 
 
-
-pragma solidity ^0.8.0;
 
 /**
  * @dev String operations.
@@ -1405,9 +1386,6 @@ library Strings {
 
 // File: @openzeppelin/contracts/access/IAccessControl.sol
 
-
-
-pragma solidity ^0.8.0;
 
 /**
  * @dev External interface of AccessControl declared to support ERC165 detection.
@@ -1497,9 +1475,6 @@ interface IAccessControl {
 
 
 
-pragma solidity ^0.8.0;
-
-
 /**
  * @dev External interface of AccessControlEnumerable declared to support ERC165 detection.
  */
@@ -1528,18 +1503,11 @@ interface IAccessControlEnumerable is IAccessControl {
 // File: @openzeppelin/contracts/token/ERC20/IERC20.sol
 
 
-
-pragma solidity ^0.8.0;
-
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
 
 // File: @openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol
-
-
-
-pragma solidity ^0.8.0;
 
 
 /**
@@ -1563,12 +1531,6 @@ interface IERC20Metadata is IERC20 {
      */
     function decimals() external view returns (uint8);
 }
-
-// File: @openzeppelin/contracts/utils/Context.sol
-
-
-
-pragma solidity ^0.8.0;
 
 
 
@@ -1780,10 +1742,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
 
 
-pragma solidity ^0.8.0;
-
-
-
 
 /**
  * @dev Extension of {AccessControl} that allows enumerating the members of each role.
@@ -1858,10 +1816,6 @@ abstract contract AccessControlEnumerable is IAccessControlEnumerable, AccessCon
 }
 
 // File: @openzeppelin/contracts/security/Pausable.sol
-
-
-
-pragma solidity ^0.8.0;
 
 
 /**
@@ -1950,10 +1904,6 @@ abstract contract Pausable is Context {
 }
 
 // File: @openzeppelin/contracts/token/ERC20/ERC20.sol
-
-
-
-pragma solidity ^0.8.0;
 
 
 
@@ -2310,10 +2260,6 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
 
 
-pragma solidity ^0.8.0;
-
-
-
 /**
  * @dev ERC20 token with pausable token transfers, minting and burning.
  *
@@ -2341,10 +2287,6 @@ abstract contract ERC20Pausable is ERC20, Pausable {
 }
 
 // File: @openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol
-
-
-
-pragma solidity ^0.8.0;
 
 
 
@@ -2385,14 +2327,6 @@ abstract contract ERC20Burnable is Context, ERC20 {
 }
 
 // File: @openzeppelin/contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol
-
-
-
-pragma solidity ^0.8.0;
-
-
-
-
 
 
 /**
@@ -2480,12 +2414,6 @@ contract ERC20PresetMinterPauser is Context, AccessControlEnumerable, ERC20Burna
 // File: @openzeppelin/contracts/access/Ownable.sol
 
 
-
-
-
-
-pragma solidity ^0.8.0;
-
 /**
  * @dev Standard math utilities missing in the Solidity language.
  */
@@ -2541,8 +2469,8 @@ contract H3RO3S is ERC20PresetMinterPauser,Ownable {
     uint256 constant public oneMonthinSeconds = 2592000;
     
     uint256 public startBlockTime;
-     
-    IERC20 public USDT = IERC20(0x4a663ea4909743544c0A41b44F84e3699DeD9b0B);
+    
+    IERC20 public USDT = IERC20(0x55d398326f99059fF775485246999027B3197955);
     IERC20 public USDC = IERC20(0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d);
     IERC20 public DAI = IERC20(0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3);
     
@@ -2555,13 +2483,16 @@ contract H3RO3S is ERC20PresetMinterPauser,Ownable {
     mapping(address => uint256) public cliffPeriods; // in months
     mapping(uint8 => uint256) public unlockPercents;
     mapping (uint256 =>uint256) public walletRates;
+    uint256 public publicSaleLimit;
+    mapping(address => uint256) private lastClaim;
     
     
-    constructor(string memory name,string memory symbol) ERC20PresetMinterPauser(name,symbol) {
+    constructor(string memory name,string memory symbol,uint256 _publicSaleLimit) ERC20PresetMinterPauser(name,symbol) {
         
 
         _mint(address(this),_totalSupply*(10**18));
         startBlockTime = block.timestamp;
+        publicSaleLimit = _publicSaleLimit;
         
     }
     
@@ -2615,7 +2546,7 @@ contract H3RO3S is ERC20PresetMinterPauser,Ownable {
     //To claim vested tokens, only works after setting unlockPercents and limits and also walletType
     
     function claimVestedTokens() public {
-        require(block.timestamp > startBlockTime+cliffPeriods[msg.sender],"Cliff period not ended");
+        require(block.timestamp - lastClaim[msg.sender] > cliffPeriods[msg.sender],"Cliff period not ended");
         uint8 _WType = walletType[msg.sender];
         require(_WType != 0,"walletType not assigned");
         require(limits[msg.sender]>0);
@@ -2624,12 +2555,14 @@ contract H3RO3S is ERC20PresetMinterPauser,Ownable {
         transfer(msg.sender,amountToCLaim);
     }
     
+    /*
     function mintBatchPercentages(address[] memory wallets,uint256[] memory walletAmts) public onlyOwner {
         require(wallets.length == walletAmts.length,"Array length not equal");
         for(uint256 i=0;i<wallets.length;i++) {
             _mint(wallets[i],walletAmts[i]*(10**18));
         }
     }
+    */
     
     
     function ceilDiv(uint256 a, uint256 b) internal pure returns (uint256) {
@@ -2638,9 +2571,11 @@ contract H3RO3S is ERC20PresetMinterPauser,Ownable {
     }
     
     function buy(uint256 amountofHeroToken) public {
+        require(publicSaleLimit >0);
         uint8 _type = walletType[msg.sender];
         uint256 ratE = walletRates[_type];
         uint256 amtUSD = amountofHeroToken*(ratE);
+        publicSaleLimit -= amountofHeroToken;
         require(USDC.transferFrom(msg.sender,address(this),amtUSD) || USDT.transferFrom(msg.sender,address(this),amtUSD) || DAI.transferFrom(msg.sender,address(this),amtUSD));
         transfer(msg.sender,amountofHeroToken);
     }    
